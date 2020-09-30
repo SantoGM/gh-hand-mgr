@@ -24,3 +24,21 @@ h5,
 h6 {
   font-family: "EconomicaBold";
 }
+
+.card {
+  display: inline-block;
+  padding: 2.5%;
+}
+
+.card-image {
+  border-radius: 8px;
+  width: 250px;
+  height: 375px;
+}
+
+.class-image {
+  border-radius: 60px;
+  width: 120px;
+  height: 120px;
+  background-color: #e0e0e0;
+}
