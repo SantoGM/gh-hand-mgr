@@ -31,6 +31,14 @@ h6 {
 }
 
 .card-image {
+  border-radius: 8px;
   width: 250px;
   height: 375px;
+}
+
+.class-image {
+  border-radius: 60px;
+  width: 120px;
+  height: 120px;
+  background-color: #e0e0e0;
 }

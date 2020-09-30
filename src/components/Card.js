@@ -1,12 +1,16 @@
-import React from "react";
+import React, { Component } from "react";
 
-const Card = (props) => {
-  const { card } = props;
-  return (
-    <div className="card">
-      <img src={card} alt="card" className="card-image" />
-    </div>
-  );
-};
+class Cards extends Component {
+  state = { isSelected: false };
 
-export default Card;
+  render() {
+    const { card } = this.props;
+    return (
+      <div key={card.id}>
+        <img className="card-image" src={card.image} alt={card.id} />
+      </div>
+    );
+  }
+}
+
+export default Cards;

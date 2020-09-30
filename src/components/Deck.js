@@ -1,14 +1,13 @@
 import React from "react";
-import Card from "./Card";
+import Cards from "./Card";
 
-const CARDS = ["new Card()"];
-
-const Deck = (props) => {
-  const { deck } = props;
+const Deck = ({ deck }) => {
   return (
     <div>
       {deck.map((card) => (
-        <Card card={card} />
+        <div key={card.id} className="card">
+          <Cards card={card} />
+        </div>
       ))}
     </div>
   );
