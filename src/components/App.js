@@ -30,6 +30,7 @@ class App extends Component {
         </div>
         {this.state.selectedClass ? (
           <div>
+            <h3>1 | 2 | 3 | 4 | 5 | 6 | 7 |8 | 9</h3>
             <div key={this.state.selectedClass.id}>
               <h3>{this.state.selectedClass.className}</h3>
               <Deck deck={this.state.selectedClass.deck} />

@@ -1,16 +1,16 @@
 import React from "react";
-import Cards from "./Card";
+import Segment from "./Segment";
 
 const Deck = ({ deck }) => {
-  return (
-    <div>
-      {deck.map((card) => (
-        <div key={card.id} className="card">
-          <Cards card={card} />
-        </div>
-      ))}
-    </div>
-  );
+  const cardsToRender = [];
+
+  for (let i = 0; i <= 5; i++) {
+    cardsToRender.push(
+      <Segment key={"segment-" + i} cards={deck[i]} lvl={i} />
+    );
+  }
+
+  return <div>{cardsToRender}</div>;
 };
 
 export default Deck;
