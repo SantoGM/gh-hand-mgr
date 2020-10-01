@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import Deck from "./Deck";
 import Class from "./Class";
+import Selector from "./Selector";
 import CLASSES from "../data/classes";
 
 class App extends Component {
-  state = { selectedClass: null };
+  state = { selectedClass: null, classLevel: 1 };
 
   setSelectedClass = (selectedClass) => {
     if (
@@ -17,26 +18,42 @@ class App extends Component {
     }
   };
 
+  setClassLevel = (classLevel) => {
+    if (this.state.selectedClass != null) {
+      this.setState({ classLevel });
+    } else {
+      this.setState({ classLevel: 1 });
+    }
+  };
+
   render() {
     return (
-      <div>
-        <h1>Gloomhaven Hand Manager</h1>
-        <div>
-          {CLASSES.map((CLASS) => (
-            <div key={CLASS.id}>
-              <Class class={CLASS} setSelectedClass={this.setSelectedClass} />
-            </div>
-          ))}
-        </div>
-        {this.state.selectedClass ? (
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h1>Gloomhaven Hand Manager</h1>
           <div>
-            <h3>1 | 2 | 3 | 4 | 5 | 6 | 7 |8 | 9</h3>
-            <div key={this.state.selectedClass.id}>
-              <h3>{this.state.selectedClass.className}</h3>
-              <Deck deck={this.state.selectedClass.deck} />
-            </div>
+            {CLASSES.map((CLASS) => (
+              <div key={CLASS.id}>
+                <Class class={CLASS} setSelectedClass={this.setSelectedClass} />
+              </div>
+            ))}
           </div>
-        ) : null}
+          {this.state.selectedClass ? (
+            <div>
+              <Selector
+                classLevel={this.state.classLevel}
+                setClassLevel={this.setClassLevel}
+              />
+              <div key={this.state.selectedClass.id}>
+                <h2>{this.state.selectedClass.className}</h2>
+                <Deck
+                  deck={this.state.selectedClass.deck}
+                  level={this.state.classLevel}
+                />
+              </div>
+            </div>
+          ) : null}
+        </div>
       </div>
     );
   }

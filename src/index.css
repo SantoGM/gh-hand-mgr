@@ -27,7 +27,8 @@ h6 {
 
 .card {
   display: inline-block;
-  padding: 2%;
+  padding: 20px;
+  margin-bottom: 0px;
 }
 
 .card-image {
@@ -41,4 +42,24 @@ h6 {
   width: 120px;
   height: 120px;
   background-color: #e0e0e0;
+}
+
+.selector {
+  padding: 2%;
+}
+
+.selector-number {
+  font-size: x-large;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.segment {
+  margin-bottom: 30px;
+  display: inline-block;
+  justify-content: center;
+  align-content: center;
+
+  gap: 4px;
+  grid-auto-flow: column;
 }
