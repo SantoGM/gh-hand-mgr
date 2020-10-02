@@ -35,6 +35,15 @@ h6 {
   border-radius: 8px;
   width: 250px;
   height: 375px;
+  cursor: pointer;
+}
+
+.card-image-selected {
+  border-radius: 8px;
+  width: 250px;
+  height: 375px;
+  cursor: pointer;
+  border: 10px solid #ff6600;
 }
 
 .class-image {
@@ -79,6 +88,7 @@ h6 {
   max-width: 1080px;
   margin: auto;
   background-color: white;
+  height: auto;
 }
 
 .main-bg {

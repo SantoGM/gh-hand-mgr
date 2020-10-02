@@ -5,16 +5,16 @@ import Selector from "./Selector";
 import CLASSES from "../data/classes";
 
 class App extends Component {
-  state = { selectedClass: null, classLevel: 1 };
+  state = { selectedClass: null, classLevel: 1, hand: [] };
 
   setSelectedClass = (selectedClass) => {
     if (
       this.state.selectedClass == null ||
       this.state.selectedClass.id != selectedClass.id
     ) {
-      this.setState({ selectedClass });
+      this.setState({ selectedClass, hand: [] });
     } else {
-      this.setState({ selectedClass: null });
+      this.setState({ selectedClass: null, hand: [] });
     }
   };
 
@@ -24,6 +24,21 @@ class App extends Component {
     } else {
       this.setState({ classLevel: 1 });
     }
+  };
+
+  manageHand = (cardId) => {
+    var { hand } = this.state;
+    var newHand = [];
+    if (hand.includes(cardId)) {
+      newHand = hand.filter((item, j) => cardId !== item);
+    } else if (hand.length < this.state.selectedClass.handSize) {
+      newHand = hand.concat(cardId);
+    } else {
+      newHand = hand;
+    }
+    newHand.sort();
+    this.setState({ hand: newHand });
+    console.log(newHand);
   };
 
   render() {
@@ -58,6 +73,8 @@ class App extends Component {
                   <Deck
                     deck={this.state.selectedClass.deck}
                     level={this.state.classLevel}
+                    hand={this.state.hand}
+                    manageHand={this.manageHand}
                   />
                 </div>
               </div>
