@@ -50,6 +50,8 @@ import mtL902 from "../assets/cards/mindthief/phantasmal_killer.png";
 import mindthiefIcon from "../assets/classes/mindthief-icon.png";
 import mindthiefPortrait from "../assets/classes/mindthief-portrait.jpg";
 
+import LIGHTNINGS from "./lightnings";
+
 const CLASSES = [
   {
     id: 1,
@@ -109,6 +111,7 @@ const CLASSES = [
       ],
     ],
   },
+  LIGHTNINGS,
 ];
 
 export default CLASSES;
