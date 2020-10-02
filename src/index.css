@@ -12,7 +12,7 @@
 body {
   text-align: center;
   font-size: 20px;
-  padding: 2.5%;
+
   font-family: "RobotoCondensed";
 }
 
@@ -75,6 +75,19 @@ h6 {
 }
 
 .cental-column {
+  padding-top: 50px;
   max-width: 1080px;
   margin: auto;
+  background-color: white;
+}
+
+.main-bg {
+  background-color: #fdfdfd;
+}
+
+.header {
+  background-color: #1d1d1d;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
