@@ -47,14 +47,14 @@ import bkL802 from "../assets/cards/berserker/vengeful_barrage.png";
 import bkL901 from "../assets/cards/berserker/immortality.png";
 import bkL902 from "../assets/cards/berserker/the_maw_of_madness.png";
 
-import berserkerIcon from "../assets/classes/berserker-icon.png";
-import mindthiefPortrait from "../assets/classes/mindthief-portrait.jpg";
+import lightningsIcon from "../assets/classes/lightnings-icon.png";
+import lightningsPortrait from "../assets/classes/lightnings-portrait.jpg";
 
 const LIGHTNINGS = {
   id: 2,
   className: "Berserker",
-  icon: berserkerIcon,
-  portrait: mindthiefPortrait,
+  icon: lightningsIcon,
+  portrait: lightningsPortrait,
   handSize: 10,
   deck: [
     [

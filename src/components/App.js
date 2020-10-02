@@ -31,10 +31,18 @@ class App extends Component {
       <div>
         <div>
           <h1>Gloomhaven Hand Manager</h1>
-          <div>
+          <div className="classBar">
             {CLASSES.map((CLASS) => (
-              <div key={CLASS.id}>
-                <Class class={CLASS} setSelectedClass={this.setSelectedClass} />
+              <div className="classBar-element" key={CLASS.id}>
+                <Class
+                  class={CLASS}
+                  setSelectedClass={this.setSelectedClass}
+                  selectedClassId={
+                    this.state.selectedClass == null
+                      ? 0
+                      : this.state.selectedClass.id
+                  }
+                />
               </div>
             ))}
           </div>

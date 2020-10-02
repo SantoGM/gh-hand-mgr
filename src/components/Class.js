@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { render } from "react-dom";
 
 class Class extends Component {
   state = { isClassSelected: false };
@@ -11,11 +10,12 @@ class Class extends Component {
 
   render() {
     const { id, portrait, icon, className } = this.props.class;
+    const { selectedClassId } = this.props;
     return (
       <div key={id} onClick={this.setSelectedClass}>
         <img
           className="class-image"
-          src={this.state.isClassSelected ? portrait : icon}
+          src={id == selectedClassId ? portrait : icon}
           alt={className}
         />
       </div>
