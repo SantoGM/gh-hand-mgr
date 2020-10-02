@@ -42,6 +42,7 @@ h6 {
   width: 120px;
   height: 120px;
   background-color: #e0e0e0;
+  cursor: pointer;
 }
 
 .selector {
@@ -71,4 +72,9 @@ h6 {
 .classBar-element {
   display: inline-block;
   margin: 10px;
+}
+
+.cental-column {
+  max-width: 1080px;
+  margin: auto;
 }
