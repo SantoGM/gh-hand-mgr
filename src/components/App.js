@@ -47,7 +47,7 @@ class App extends Component {
             ))}
           </div>
           {this.state.selectedClass ? (
-            <div>
+            <div className="cental-column">
               <Selector
                 classLevel={this.state.classLevel}
                 setClassLevel={this.setClassLevel}
