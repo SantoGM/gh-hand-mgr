@@ -50,9 +50,63 @@ import mtL902 from "../assets/cards/mindthief/phantasmal_killer.png";
 import mindthiefIcon from "../assets/classes/mindthief-icon.png";
 import mindthiefPortrait from "../assets/classes/mindthief-portrait.jpg";
 
-import MINDTHIEF from "./mindthief";
-import LIGHTNINGS from "./lightnings";
+const MINDTHIEF = {
+  id: 1,
+  className: "Mindthief",
+  icon: mindthiefIcon,
+  portrait: mindthiefPortrait,
+  handSize: 10,
+  deck: [
+    [
+      { id: 156, lvl: "x", image: mtLX01 },
+      { id: 157, lvl: "x", image: mtLX02 },
+      { id: 158, lvl: "x", image: mtLX03 },
+    ],
+    [
+      { id: 146, lvl: "1", image: mtL101 },
+      { id: 147, lvl: "1", image: mtL102 },
+      { id: 148, lvl: "1", image: mtL103 },
+      { id: 149, lvl: "1", image: mtL104 },
+      { id: 150, lvl: "1", image: mtL105 },
+      { id: 151, lvl: "1", image: mtL106 },
+      { id: 152, lvl: "1", image: mtL107 },
+      { id: 153, lvl: "1", image: mtL108 },
+      { id: 154, lvl: "1", image: mtL109 },
+      { id: 155, lvl: "1", image: mtL110 },
+    ],
+    [
+      { id: 159, lvl: "2", image: mtL201 },
+      { id: 160, lvl: "2", image: mtL202 },
+    ],
+    [
+      { id: 161, lvl: "3", image: mtL301 },
+      { id: 162, lvl: "3", image: mtL302 },
+    ],
+    [
+      { id: 163, lvl: "4", image: mtL401 },
+      { id: 164, lvl: "4", image: mtL402 },
+    ],
+    [
+      { id: 165, lvl: "5", image: mtL501 },
+      { id: 166, lvl: "5", image: mtL502 },
+    ],
+    [
+      { id: 167, lvl: "6", image: mtL601 },
+      { id: 168, lvl: "6", image: mtL602 },
+    ],
+    [
+      { id: 169, lvl: "7", image: mtL701 },
+      { id: 170, lvl: "7", image: mtL702 },
+    ],
+    [
+      { id: 171, lvl: "8", image: mtL801 },
+      { id: 172, lvl: "8", image: mtL802 },
+    ],
+    [
+      { id: 173, lvl: "9", image: mtL901 },
+      { id: 174, lvl: "9", image: mtL902 },
+    ],
+  ],
+};
 
-const CLASSES = [MINDTHIEF, LIGHTNINGS];
-
-export default CLASSES;
+export default MINDTHIEF;
