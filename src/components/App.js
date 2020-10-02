@@ -28,8 +28,8 @@ class App extends Component {
 
   render() {
     return (
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
+      <div>
+        <div>
           <h1>Gloomhaven Hand Manager</h1>
           <div>
             {CLASSES.map((CLASS) => (
