@@ -10,12 +10,12 @@ const Header = ({ children }) => {
 
   return (
     <div>
-      <div>
+      <div className="header">
         <h3 style={style}>
           <Link to="/">Home</Link>
         </h3>
       </div>
-      {children}
+      <div className="central-column">{children}</div>
     </div>
   );
 };

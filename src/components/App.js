@@ -28,8 +28,8 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <div>
+      <div className="main-bg">
+        <div className="cental-column">
           <h1>Gloomhaven Hand Manager</h1>
           <div className="classBar">
             {CLASSES.map((CLASS) => (
@@ -46,21 +46,23 @@ class App extends Component {
               </div>
             ))}
           </div>
-          {this.state.selectedClass ? (
-            <div className="cental-column">
-              <Selector
-                classLevel={this.state.classLevel}
-                setClassLevel={this.setClassLevel}
-              />
-              <div key={this.state.selectedClass.id}>
-                <h2>{this.state.selectedClass.className}</h2>
-                <Deck
-                  deck={this.state.selectedClass.deck}
-                  level={this.state.classLevel}
+          <div>
+            {this.state.selectedClass ? (
+              <div>
+                <Selector
+                  classLevel={this.state.classLevel}
+                  setClassLevel={this.setClassLevel}
                 />
+                <div key={this.state.selectedClass.id}>
+                  <h2>{this.state.selectedClass.className}</h2>
+                  <Deck
+                    deck={this.state.selectedClass.deck}
+                    level={this.state.classLevel}
+                  />
+                </div>
               </div>
-            </div>
-          ) : null}
+            ) : null}
+          </div>
         </div>
       </div>
     );
