@@ -28,19 +28,21 @@ class App extends Component {
 
   manageHand = (cardId) => {
     var { hand } = this.state;
-    var newHand = [];
-    var response = 0;
     if (hand.includes(cardId)) {
-      newHand = hand.filter((item, j) => cardId !== item);
+      this.removeCard(hand, cardId);
+      return 0;
     } else if (hand.length < this.state.selectedClass.handSize) {
-      newHand = hand.concat(cardId);
-      response = 1;
-    } else {
-      newHand = hand;
+      this.addCard(hand, cardId);
+      return 1;
     }
-    newHand.sort();
-    this.state.hand = newHand;
-    return response;
+  };
+
+  removeCard = (hand, cardId) => {
+    this.state.hand = hand.filter((item, j) => cardId !== item);
+  };
+
+  addCard = (hand, cardId) => {
+    this.state.hand = hand.concat(cardId);
   };
 
   render() {
