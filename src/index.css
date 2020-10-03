@@ -33,17 +33,14 @@ h6 {
 
 .card-image {
   border-radius: 8px;
-  width: 250px;
-  height: 375px;
   cursor: pointer;
 }
 
 .card-image-selected {
   border-radius: 8px;
-  width: 250px;
-  height: 375px;
   cursor: pointer;
-  border: 10px solid #ff6600;
+  box-shadow: 0 0 5px 5px;
+  color: greenyellow;
 }
 
 .class-image {

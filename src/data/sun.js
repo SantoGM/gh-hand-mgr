@@ -57,6 +57,7 @@ const SUN = {
   icon: sunIcon,
   portrait: sunPortrait,
   handSize: 11,
+  color: "#ffff99",
   deck: [
     [
       { id: 186, lvl: "x", image: skLX01 },
