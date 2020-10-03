@@ -6,14 +6,15 @@ const Header = ({ children }) => {
     display: "inline-block",
     margin: 10,
     marginBottom: 10,
+    fontSize: "70px",
   };
 
   return (
     <div>
       <div className="header">
-        <h3 style={style}>
+        <h1 style={style}>
           <Link to="/">Home</Link>
-        </h3>
+        </h1>
       </div>
       <div className="central-column">{children}</div>
     </div>
