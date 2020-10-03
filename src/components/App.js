@@ -29,16 +29,18 @@ class App extends Component {
   manageHand = (cardId) => {
     var { hand } = this.state;
     var newHand = [];
+    var response = 0;
     if (hand.includes(cardId)) {
       newHand = hand.filter((item, j) => cardId !== item);
     } else if (hand.length < this.state.selectedClass.handSize) {
       newHand = hand.concat(cardId);
+      response = 1;
     } else {
       newHand = hand;
     }
     newHand.sort();
-    this.setState({ hand: newHand });
-    console.log(newHand);
+    this.state.hand = newHand;
+    return response;
   };
 
   render() {
@@ -73,7 +75,6 @@ class App extends Component {
                   <Deck
                     deck={this.state.selectedClass.deck}
                     level={this.state.classLevel}
-                    hand={this.state.hand}
                     manageHand={this.manageHand}
                   />
                 </div>
