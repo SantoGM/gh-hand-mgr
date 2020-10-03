@@ -56,6 +56,7 @@ const LIGHTNINGS = {
   icon: lightningsIcon,
   portrait: lightningsPortrait,
   handSize: 10,
+  color: "#ff4000",
   deck: [
     [
       { id: 329, lvl: "x", image: bkLX01 },

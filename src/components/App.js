@@ -78,6 +78,7 @@ class App extends Component {
                     deck={this.state.selectedClass.deck}
                     level={this.state.classLevel}
                     manageHand={this.manageHand}
+                    classColor={this.state.selectedClass.color}
                   />
                 </div>
               </div>

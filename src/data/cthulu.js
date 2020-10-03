@@ -57,6 +57,7 @@ const CTHULU = {
   icon: cthuluIcon,
   portrait: cthuluPortrait,
   handSize: 11,
+  color: "#00cc99",
   deck: [
     [
       { id: 300, lvl: "x", image: phLX01 },

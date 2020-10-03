@@ -56,6 +56,7 @@ const MINDTHIEF = {
   icon: mindthiefIcon,
   portrait: mindthiefPortrait,
   handSize: 10,
+  color: "#0066cc",
   deck: [
     [
       { id: 156, lvl: "x", image: mtLX01 },
