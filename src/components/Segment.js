@@ -9,11 +9,7 @@ const Segment = (props) => {
       <h3>Level {lvl == 0 ? "X" : lvl} </h3>
       {cards.map((card) => (
         <div key={card.id} className="card">
-          <Cards
-            card={card}
-            manageHand={manageHand}
-            selected={hand.includes(card.id)}
-          />
+          <Cards card={card} manageHand={manageHand} />
         </div>
       ))}
     </div>

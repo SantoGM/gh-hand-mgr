@@ -4,7 +4,8 @@ class Cards extends Component {
   state = { isSelected: false };
 
   handleSelectCard = () => {
-    this.props.manageHand(this.props.card.id);
+    var res = this.props.manageHand(this.props.card.id);
+    this.setState({ isSelected: res === 1 ? true : false });
   };
 
   render() {
@@ -12,7 +13,9 @@ class Cards extends Component {
     return (
       <div key={card.id}>
         <img
-          className={this.props.selected ? "card-image-selected" : "card-image"}
+          className={
+            this.state.isSelected ? "card-image-selected" : "card-image"
+          }
           onClick={this.handleSelectCard}
           src={card.image}
           alt={card.id}
