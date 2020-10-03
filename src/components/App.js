@@ -3,6 +3,7 @@ import Deck from "./Deck";
 import Class from "./Class";
 import Selector from "./Selector";
 import CLASSES from "../data/classes";
+import { Button } from "@material-ui/core";
 
 class App extends Component {
   state = { selectedClass: null, classLevel: 1, hand: [] };
@@ -38,11 +39,11 @@ class App extends Component {
   };
 
   removeCard = (hand, cardId) => {
-    this.state.hand = hand.filter((item, j) => cardId !== item);
+    this.setState({ hand: hand.filter((item, j) => cardId !== item) });
   };
 
   addCard = (hand, cardId) => {
-    this.state.hand = hand.concat(cardId);
+    this.setState({ hand: hand.concat(cardId) });
   };
 
   render() {
@@ -83,6 +84,27 @@ class App extends Component {
                 </div>
               </div>
             ) : null}
+          </div>
+        </div>
+        <div className="footer">
+          <div className="footer-content">
+            {this.state.selectedClass ? (
+              <p
+                style={{
+                  fontSize: "40px",
+                  fontWeight: "bold",
+                  color: "#FFFFFF",
+                }}
+              >
+                {this.state.hand.length}/{this.state.selectedClass.handSize}{" "}
+                cards
+              </p>
+            ) : null}
+            <Button variant="contained" size="large">
+              <span style={{ fontSize: "25px", fontWeight: "bold" }}>
+                Confirm hand
+              </span>
+            </Button>
           </div>
         </div>
       </div>

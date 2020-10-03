@@ -39,7 +39,7 @@ h6 {
 .card-image-selected {
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 0 5px 5px;
+  box-shadow: 0 0 15px 15px;
   color: greenyellow;
 }
 
@@ -81,7 +81,7 @@ h6 {
 }
 
 .cental-column {
-  padding-top: 50px;
+  padding-top: 100px;
   max-width: 1080px;
   margin: auto;
   background-color: white;
@@ -97,4 +97,16 @@ h6 {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.footer {
+  background-color: #1d1d1d;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 30px;
+}
+
+.footer-content {
+  display: inline-block;
 }
