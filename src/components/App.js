@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Deck from "./Deck";
 import Class from "./Class";
 import Selector from "./Selector";
+import Footer from "./Footer";
 import CLASSES from "../data/classes";
-import { Button } from "@material-ui/core";
 
 class App extends Component {
   state = { selectedClass: null, classLevel: 1, hand: [] };
@@ -86,27 +86,10 @@ class App extends Component {
             ) : null}
           </div>
         </div>
-        <div className="footer">
-          <div className="footer-content">
-            {this.state.selectedClass ? (
-              <p
-                style={{
-                  fontSize: "40px",
-                  fontWeight: "bold",
-                  color: "#FFFFFF",
-                }}
-              >
-                {this.state.hand.length}/{this.state.selectedClass.handSize}{" "}
-                cards
-              </p>
-            ) : null}
-            <Button variant="contained" size="large">
-              <span style={{ fontSize: "25px", fontWeight: "bold" }}>
-                Confirm hand
-              </span>
-            </Button>
-          </div>
-        </div>
+        <Footer
+          selectedClass={this.state.selectedClass}
+          hand={this.state.hand}
+        />
       </div>
     );
   }

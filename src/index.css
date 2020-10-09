@@ -82,7 +82,8 @@ h6 {
 
 .cental-column {
   padding-top: 100px;
-  max-width: 1080px;
+  padding-bottom: 180px;
+  max-width: 1440px;
   margin: auto;
   background-color: white;
   height: auto;
@@ -104,9 +105,20 @@ h6 {
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 30px;
+  padding-bottom: 30px;
+  padding-top: 10px;
 }
 
-.footer-content {
+.counter {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  display: inline-block;
+  padding: 20px;
+}
+
+.button-text {
+  font-size: 25px;
+  font-weight: bold;
   display: inline-block;
 }
