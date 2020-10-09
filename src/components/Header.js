@@ -6,7 +6,7 @@ const Header = ({ children }) => {
     display: "inline-block",
     margin: 10,
     marginBottom: 10,
-    fontSize: "70px",
+    fontSize: "30px",
   };
 
   return (
