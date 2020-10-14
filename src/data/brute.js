@@ -55,7 +55,7 @@ const BRUTE = {
   className: "brute",
   icon: sunIcon,
   portrait: sunPortrait,
-  handSize: 11,
+  handSize: 10,
   color: "#0080ff",
   deck: [
     [

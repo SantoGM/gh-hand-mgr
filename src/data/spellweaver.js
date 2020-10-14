@@ -53,7 +53,7 @@ const SPELLWEAVER = {
   className: "spellweaver",
   icon: sunIcon,
   portrait: sunPortrait,
-  handSize: 11,
+  handSize: 8,
   color: "#992de0",
   deck: [
     [
