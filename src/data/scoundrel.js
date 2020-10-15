@@ -50,7 +50,7 @@ import sunIcon from "../assets/classes/scoundrel-icon.png";
 import sunPortrait from "../assets/classes/scoundrel-portrait.jpg";
 
 const SCOUNDREL = {
-  id: 7,
+  id: 4,
   className: "scoundrel",
   icon: sunIcon,
   portrait: sunPortrait,

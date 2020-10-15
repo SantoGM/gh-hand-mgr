@@ -49,7 +49,7 @@ import sunIcon from "../assets/classes/spellweaver-icon.png";
 import sunPortrait from "../assets/classes/spellweaver-portrait.jpg";
 
 const SPELLWEAVER = {
-  id: 6,
+  id: 3,
   className: "spellweaver",
   icon: sunIcon,
   portrait: sunPortrait,
@@ -72,36 +72,36 @@ const SPELLWEAVER = {
       { id: 68, lvl: "1", image: swL108 },
     ],
     [
-      { id: 332, lvl: "2", image: swL201 },
-      { id: 333, lvl: "2", image: swL202 },
+      { id: 72, lvl: "2", image: swL201 },
+      { id: 73, lvl: "2", image: swL202 },
     ],
     [
-      { id: 334, lvl: "3", image: swL301 },
-      { id: 335, lvl: "3", image: swL302 },
+      { id: 74, lvl: "3", image: swL301 },
+      { id: 75, lvl: "3", image: swL302 },
     ],
     [
-      { id: 336, lvl: "4", image: swL401 },
-      { id: 337, lvl: "4", image: swL402 },
+      { id: 76, lvl: "4", image: swL401 },
+      { id: 77, lvl: "4", image: swL402 },
     ],
     [
-      { id: 338, lvl: "5", image: swL501 },
-      { id: 339, lvl: "5", image: swL502 },
+      { id: 78, lvl: "5", image: swL501 },
+      { id: 79, lvl: "5", image: swL502 },
     ],
     [
-      { id: 340, lvl: "6", image: swL601 },
-      { id: 341, lvl: "6", image: swL602 },
+      { id: 80, lvl: "6", image: swL601 },
+      { id: 81, lvl: "6", image: swL602 },
     ],
     [
-      { id: 342, lvl: "7", image: swL701 },
-      { id: 343, lvl: "7", image: swL702 },
+      { id: 82, lvl: "7", image: swL701 },
+      { id: 83, lvl: "7", image: swL702 },
     ],
     [
-      { id: 344, lvl: "8", image: swL801 },
-      { id: 345, lvl: "8", image: swL802 },
+      { id: 84, lvl: "8", image: swL801 },
+      { id: 85, lvl: "8", image: swL802 },
     ],
     [
-      { id: 346, lvl: "9", image: swL901 },
-      { id: 347, lvl: "9", image: swL902 },
+      { id: 86, lvl: "9", image: swL901 },
+      { id: 87, lvl: "9", image: swL902 },
     ],
   ],
 };

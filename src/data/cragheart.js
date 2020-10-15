@@ -52,7 +52,7 @@ import cragheartIcon from "../assets/classes/cragheart-icon.png";
 import cragheartPortrait from "../assets/classes/cragheart-portrait.jpg";
 
 const CRAGHEART = {
-  id: 8,
+  id: 5,
   className: "cragheart",
   icon: cragheartIcon,
   portrait: cragheartPortrait,

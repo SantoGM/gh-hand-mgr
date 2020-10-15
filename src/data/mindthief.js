@@ -51,7 +51,7 @@ import mindthiefIcon from "../assets/classes/mindthief-icon.png";
 import mindthiefPortrait from "../assets/classes/mindthief-portrait.jpg";
 
 const MINDTHIEF = {
-  id: 1,
+  id: 6,
   className: "Mindthief",
   icon: mindthiefIcon,
   portrait: mindthiefPortrait,

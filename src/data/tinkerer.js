@@ -53,7 +53,7 @@ import tinkererIcon from "../assets/classes/tinkerer-icon.png";
 import tinkererPortrait from "../assets/classes/tinkerer-portrait.jpg";
 
 const TINKERER = {
-  id: 9,
+  id: 2,
   className: "tinkerer",
   icon: tinkererIcon,
   portrait: tinkererPortrait,

@@ -51,7 +51,7 @@ import sunIcon from "../assets/classes/brute-icon.png";
 import sunPortrait from "../assets/classes/brute-portrait.jpg";
 
 const BRUTE = {
-  id: 5,
+  id: 1,
   className: "brute",
   icon: sunIcon,
   portrait: sunPortrait,
