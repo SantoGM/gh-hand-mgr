@@ -45,14 +45,14 @@ import swL802 from "../assets/cards/spellweaver/cold_front.png";
 import swL901 from "../assets/cards/spellweaver/black_hole.png";
 import swL902 from "../assets/cards/spellweaver/inferno.png";
 
-import sunIcon from "../assets/classes/spellweaver-icon.png";
-import sunPortrait from "../assets/classes/spellweaver-portrait.jpg";
+import spellweaverIcon from "../assets/classes/spellweaver-icon.png";
+import spellweaverPortrait from "../assets/classes/spellweaver-portrait.jpg";
 
 const SPELLWEAVER = {
   id: 3,
   className: "spellweaver",
-  icon: sunIcon,
-  portrait: sunPortrait,
+  icon: spellweaverIcon,
+  portrait: spellweaverPortrait,
   handSize: 8,
   color: "#992de0",
   deck: [
