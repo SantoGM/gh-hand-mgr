@@ -47,14 +47,14 @@ import brL802 from "../assets/cards/brute/selfish_retribution.png";
 import brL901 from "../assets/cards/brute/king_of_the_hill.png";
 import brL902 from "../assets/cards/brute/face_your_end.png";
 
-import sunIcon from "../assets/classes/brute-icon.png";
-import sunPortrait from "../assets/classes/brute-portrait.jpg";
+import bruteIcon from "../assets/classes/brute-icon.png";
+import brutePortrait from "../assets/classes/brute-portrait.jpg";
 
 const BRUTE = {
   id: 1,
   className: "brute",
-  icon: sunIcon,
-  portrait: sunPortrait,
+  icon: bruteIcon,
+  portrait: brutePortrait,
   handSize: 10,
   color: "#0080ff",
   deck: [
