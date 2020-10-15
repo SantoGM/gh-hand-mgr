@@ -52,7 +52,7 @@ import cthuluIcon from "../assets/classes/cthulu-icon.png";
 import cthuluPortrait from "../assets/classes/cthulu-portrait.jpg";
 
 const CTHULU = {
-  id: 4,
+  id: 20,
   className: "Plagueherald",
   icon: cthuluIcon,
   portrait: cthuluPortrait,

@@ -51,7 +51,7 @@ import lightningsIcon from "../assets/classes/lightnings-icon.png";
 import lightningsPortrait from "../assets/classes/lightnings-portrait.jpg";
 
 const LIGHTNINGS = {
-  id: 2,
+  id: 21,
   className: "Berserker",
   icon: lightningsIcon,
   portrait: lightningsPortrait,

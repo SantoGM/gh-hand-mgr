@@ -52,7 +52,7 @@ import sunIcon from "../assets/classes/sun-icon.png";
 import sunPortrait from "../assets/classes/sun-portrait.jpg";
 
 const SUN = {
-  id: 3,
+  id: 22,
   className: "Sunkeeper",
   icon: sunIcon,
   portrait: sunPortrait,
