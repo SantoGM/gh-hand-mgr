@@ -46,14 +46,14 @@ import scL802 from "../assets/cards/scoundrel/pains_end.png";
 import scL901 from "../assets/cards/scoundrel/long_con.png";
 import scL902 from "../assets/cards/scoundrel/watch_it_burn.png";
 
-import sunIcon from "../assets/classes/scoundrel-icon.png";
-import sunPortrait from "../assets/classes/scoundrel-portrait.jpg";
+import scoundrelIcon from "../assets/classes/scoundrel-icon.png";
+import scoundrelPortrait from "../assets/classes/scoundrel-portrait.jpg";
 
 const SCOUNDREL = {
   id: 4,
   className: "scoundrel",
-  icon: sunIcon,
-  portrait: sunPortrait,
+  icon: scoundrelIcon,
+  portrait: scoundrelPortrait,
   handSize: 9,
   color: "#8fe800",
   deck: [
