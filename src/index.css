@@ -63,7 +63,6 @@ h6 {
 
 .segment {
   margin-bottom: 30px;
-  display: inline-block;
   justify-content: center;
   align-content: center;
 
@@ -86,7 +85,7 @@ h6 {
   max-width: 1440px;
   margin: auto;
   background-color: white;
-  height: auto;
+  height: fit-content;
 }
 
 .main-bg {
