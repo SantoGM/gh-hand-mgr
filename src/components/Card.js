@@ -13,7 +13,7 @@ class Cards extends Component {
   }
 
   ImagePlaceholder = () => (
-      <ContentLoader width="400" height="600" viewBox="0 0 400 600" style={{position:"absolute"}}>  
+      <ContentLoader width="400" height="600" viewBox="0 0 400 600">  
         <rect width="400" height="600" rx="10" ry="10" fill="#CCC" />
       </ContentLoader>
   );
