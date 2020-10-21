@@ -55,6 +55,9 @@ h6 {
 }
 
 .card-image-selected {
+  position: absolute;
+  top: 0;
+  left: 0;
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 0 15px 15px;
