@@ -24,11 +24,15 @@ h5,
 h6 {
   font-family: "EconomicaBold";
 }
-
 .card {
   display: inline-block;
   padding: 20px;
   margin-bottom: 0px;
+}
+
+.card-placeholder {
+  position: absolute;
+  z-index: 900;
 }
 
 .card-image {
@@ -97,6 +101,7 @@ h6 {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 950;
 }
 
 .footer {
@@ -106,6 +111,7 @@ h6 {
   width: 100%;
   padding-bottom: 30px;
   padding-top: 10px;
+  z-index: 950;
 }
 
 .counter {

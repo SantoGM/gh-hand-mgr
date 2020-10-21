@@ -13,25 +13,25 @@ class Cards extends Component {
   }
 
   ImagePlaceholder = () => (
-      <ContentLoader width="400" height="600" viewBox="0 0 400 600">  
-        <rect width="400" height="600" rx="10" ry="10" fill="#CCC" />
+      <ContentLoader viewBox="0 0 400 600" width="400" height="600" className ="card-placeholder">  
+        <rect width="400" height="600" rx="8" ry="8"/>
       </ContentLoader>
   );
 
   render() {
     const { card } = this.props;
     return (
-      <div key={card.id} >
+      <div key={card.id}>
         {!this.state.isImageLoaded && <this.ImagePlaceholder />}
         <img
           className={
             this.state.isSelected ? "card-image-selected" : "card-image"
           }
-          style={ this.state.isImageLoaded ? { color: this.props.classColor } : {visibility: "hidden"} }
+          style={ this.state.isImageLoaded ? { color: this.props.classColor } : {} }
           onClick={this.handleSelectCard}
           src={card.image}
           alt={card.id}
-          onLoad={() => setTimeout(() => this.setImageLoaded(true), 200)}
+          onLoad={() => setTimeout(() => this.setImageLoaded(true))}
         />
       </div>
     );
