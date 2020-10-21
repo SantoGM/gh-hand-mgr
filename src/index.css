@@ -30,12 +30,26 @@ h6 {
   margin-bottom: 0px;
 }
 
+.card-row {
+  position: relative;
+  display: inline-block;
+  height: 600px;
+  width: 400px;
+  padding: 20px;
+  margin-bottom: 0px;
+}
+
 .card-placeholder {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 900;
 }
 
 .card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   border-radius: 8px;
   cursor: pointer;
 }

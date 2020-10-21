@@ -21,7 +21,7 @@ class Cards extends Component {
   render() {
     const { card } = this.props;
     return (
-      <div key={card.id}>
+      <div key={card.id} className="card-row">
         {!this.state.isImageLoaded && <this.ImagePlaceholder />}
         <img
           className={
