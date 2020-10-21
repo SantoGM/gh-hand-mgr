@@ -24,14 +24,32 @@ h5,
 h6 {
   font-family: "EconomicaBold";
 }
-
 .card {
   display: inline-block;
   padding: 20px;
   margin-bottom: 0px;
 }
 
+.card-row {
+  position: relative;
+  display: inline-block;
+  height: 600px;
+  width: 400px;
+  padding: 20px;
+  margin-bottom: 0px;
+}
+
+.card-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+}
+
 .card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -63,7 +81,6 @@ h6 {
 
 .segment {
   margin-bottom: 30px;
-  display: inline-block;
   justify-content: center;
   align-content: center;
 
@@ -86,7 +103,7 @@ h6 {
   max-width: 1440px;
   margin: auto;
   background-color: white;
-  height: auto;
+  height: fit-content;
 }
 
 .main-bg {
@@ -98,6 +115,7 @@ h6 {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 950;
 }
 
 .footer {
@@ -107,6 +125,7 @@ h6 {
   width: 100%;
   padding-bottom: 30px;
   padding-top: 10px;
+  z-index: 950;
 }
 
 .counter {
